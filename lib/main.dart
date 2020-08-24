@@ -9,15 +9,22 @@ void main() {
         backgroundColor: Colors.red,
       ),
       body: DicePage(),
-      ),
-    )
-  );
+    ),
+  ));
 }
 
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-   return Container();
+    return Row(
+      children: <Widget>[
+        Expanded(
+          child: Image(image: AssetImage('images/dice1.png')),
+        ),
+        Expanded(
+          child: Image(image: AssetImage('images/dice2.png')),
+        )
+      ],
+    );
   }
 }
-
